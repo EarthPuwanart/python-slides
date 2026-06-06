@@ -281,41 +281,34 @@ hello</div>
 <!-- ==================== SLIDE 10: Naming Rules ==================== -->
 <div class="slide">
   <span class="badge anim">Variables & Data Types</span>
-  <h2 class="anim">กฎการตั้งชื่อตัวแปร</h2>
-  <div class="card card--accent anim" style="margin-top: 1rem;">
-    <ul style="font-size: 1.3rem; line-height: 2;">
-      <li>ต้องประกอบด้วย <strong>ตัวอักษรภาษาอังกฤษ (a-z, A-Z), ตัวเลข (0-9) หรือขีดล่าง (<code>_</code>)</strong> เท่านั้น</li>
-      <li><strong style="color:var(--accent);">ห้าม</strong> ขึ้นต้นด้วยตัวเลข</li>
-      <li><strong style="color:var(--accent);">ห้าม</strong> มีช่องว่าง (เว้นวรรค) หรือใช้เครื่องหมายพิเศษอื่นๆ (เช่น <code>@</code>, <code>#</code>, <code>-</code>)</li>
-      <li><strong style="color:var(--accent);">ห้าม</strong> ตั้งชื่อซ้ำกับคำสงวนของภาษา Python (เช่น <code>if</code>, <code>for</code>, <code>class</code>, <code>True</code>, <code>False</code>)</li>
-      <li>ตัวพิมพ์เล็กและพิมพ์ใหญ่ถือเป็นคนละตัวแปร (<strong>Case-Sensitive</strong>)</li>
-    </ul>
-  </div>
-</div>
-
-<!-- ==================== SLIDE 10.5: Naming Examples ==================== -->
-<div class="slide">
-  <span class="badge anim">Variables & Data Types</span>
-  <h2 class="anim">ตัวอย่างการตั้งชื่อตัวแปร</h2>
-  <div class="columns anim">
-    <div>
-      <h3>✅ ทำได้ (ถูกต้อง)</h3>
-      <div class="code-block">
-<span class="var">name</span> <span class="op">=</span> <span class="str">"Alice"</span>        <span class="cmt"># ตัวอักษรล้วน</span><br>
-<span class="var">_private</span> <span class="op">=</span> <span class="num">42</span>         <span class="cmt"># มีขีดล่างนำหน้า</span><br>
-<span class="var">student_name</span> <span class="op">=</span> <span class="str">"Bob"</span>      <span class="cmt"># ใช้ขีดล่างเชื่อมคำ</span><br>
-<span class="var">score1</span> <span class="op">=</span> <span class="num">95</span>           <span class="cmt"># ตัวเลขอยู่ด้านหลัง</span><br>
-<span class="var">MAX_SIZE</span> <span class="op">=</span> <span class="num">100</span>        <span class="cmt"># พิมพ์ใหญ่ (นิยมใช้กับค่าคงที่)</span>
-      </div>
+  <h2 class="anim">กฎและตัวอย่างการตั้งชื่อตัวแปร</h2>
+  <div class="columns anim" style="grid-template-columns: 1fr 1fr; align-items: stretch; gap: 1.5rem;">
+    <div class="card card--accent" style="display: flex; flex-direction: column; justify-content: center;">
+      <h3 style="margin-top: 0; margin-bottom: 1rem;">กฎการตั้งชื่อ</h3>
+      <ul style="font-size: 1.2rem; line-height: 1.9; margin-bottom: 0;">
+        <li>ใช้ได้แค่ <strong>ตัวอักษรภาษาอังกฤษ, ตัวเลข, หรือขีดล่าง (<code>_</code>)</strong></li>
+        <li><strong style="color:var(--accent);">ห้าม</strong> ขึ้นต้นด้วยตัวเลข</li>
+        <li><strong style="color:var(--accent);">ห้าม</strong> เว้นวรรค หรือใช้เครื่องหมายพิเศษ (เช่น <code>@</code>, <code>-</code>)</li>
+        <li><strong style="color:var(--accent);">ห้าม</strong> ซ้ำกับคำสงวน (เช่น <code>if</code>, <code>for</code>, <code>class</code>)</li>
+        <li>ตัวพิมพ์เล็ก-ใหญ่ ถือว่าต่างกัน (<strong>Case-Sensitive</strong>)</li>
+      </ul>
     </div>
-    <div>
-      <h3>❌ ทำไม่ได้ (ผิดกฎ)</h3>
-      <div class="code-block">
+    <div style="display: flex; flex-direction: column; gap: 1rem;">
+      <div class="card" style="padding: 1rem;">
+        <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: #16a34a;">✅ ทำได้ (ถูกต้อง)</h3>
+        <div class="code-block" style="margin: 0; padding: 0.8rem; font-size: 0.95rem;">
+<span class="var">name</span> <span class="op">=</span> <span class="str">"Alice"</span>        <span class="cmt"># ตัวอักษรล้วน</span><br>
+<span class="var">_private</span> <span class="op">=</span> <span class="num">42</span>         <span class="cmt"># ขีดล่างนำหน้า</span><br>
+<span class="var">student_name</span> <span class="op">=</span> <span class="str">"Bob"</span>      <span class="cmt"># snake_case</span>
+        </div>
+      </div>
+      <div class="card" style="padding: 1rem;">
+        <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: #dc2626;">❌ ทำไม่ได้ (ผิดกฎ)</h3>
+        <div class="code-block" style="margin: 0; padding: 0.8rem; font-size: 0.95rem;">
 <span class="cmt"># 1name = "error"    # ❌ ขึ้นต้นด้วยตัวเลข</span><br>
-<span class="cmt"># my-name = "error"  # ❌ ใช้เครื่องหมาย -</span><br>
-<span class="cmt"># my name = "error"  # ❌ มีช่องว่าง</span><br>
-<span class="cmt"># class = "error"    # ❌ ซ้ำคำสงวน</span><br>
-<span class="cmt"># user@id = "error"  # ❌ มีเครื่องหมายพิเศษ</span>
+<span class="cmt"># my-name = "error"  # ❌ ห้ามใช้ขีดกลาง (-)</span><br>
+<span class="cmt"># class = "error"    # ❌ ซ้ำกับคำสงวน</span>
+        </div>
       </div>
     </div>
   </div>
