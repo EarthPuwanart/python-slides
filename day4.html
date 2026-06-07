@@ -127,11 +127,11 @@
             <span class="badge anim">While Loop</span>
             <h2 class="anim">while True + break — Menu Pattern</h2>
             <div class="code-block anim"><span class="kw">while</span> <span class="num">True</span>:
-    <span class="var">answer</span> <span class="op">=</span> <span class="fn">input</span>(<span class="str">"Continue? (y/n): "</span>)
-    <span class="kw">if</span> answer <span class="op">==</span> <span class="str">"n"</span>:
-        <span class="fn">print</span>(<span class="str">"Goodbye!"</span>)
-        <span class="kw">break</span>
-    <span class="fn">print</span>(<span class="str">"Working..."</span>)</div>
+<span class="var">answer</span> <span class="op">=</span> <span class="fn">input</span>(<span class="str">"Continue? (y/n): "</span>)
+<span class="kw">if</span> answer <span class="op">==</span> <span class="str">"n"</span>:
+    <span class="fn">print</span>(<span class="str">"Goodbye!"</span>)
+    <span class="kw">break</span>
+<span class="fn">print</span>(<span class="str">"Working..."</span>)</div>
             <p class="text-small anim">💡 ใช้ <code>while True</code> เมื่อไม่รู้จำนวนรอบล่วงหน้า แต่ต้องมี <code>break</code> เสมอ!</p>
         </section>
 
@@ -156,7 +156,7 @@
                 <div>
                     <h3>Syntax</h3>
                     <div class="code-block no-bottom-radius"><span class="kw">for</span> <span class="var">i</span> <span class="kw">in</span> <span class="fn">range</span>(<span class="num">5</span>):
-    <span class="fn">print</span>(i)</div>
+<span class="fn">print</span>(i)</div>
       <div class="output-box">0 1 2 3 4</div>
                 </div>
                 <div>
@@ -188,7 +188,7 @@ cherry</div>
                 </div>
                 <div>
                     <div class="code-block no-bottom-radius"><span class="kw">for</span> <span class="var">letter</span> <span class="kw">in</span> <span class="str">"apple"</span>:
-    <span class="fn">print</span>(letter)</div>
+<span class="fn">print</span>(letter)</div>
       <div class="output-box">a
 p
 p
@@ -206,17 +206,17 @@ e</div>
                 <div>
                     <h3>break — ออกจากลูปทันที</h3>
                     <div class="code-block no-bottom-radius"><span class="kw">for</span> <span class="var">i</span> <span class="kw">in</span> <span class="fn">range</span>(<span class="num">10</span>):
-    <span class="kw">if</span> i <span class="op">==</span> <span class="num">5</span>:
-        <span class="kw">break</span>
-    <span class="fn">print</span>(i)</div>
+<span class="kw">if</span> i <span class="op">==</span> <span class="num">5</span>:
+    <span class="kw">break</span>
+<span class="fn">print</span>(i)</div>
       <div class="output-box">0 1 2 3 4</div>
                 </div>
                 <div>
                     <h3>continue — ข้ามไปรอบถัดไป</h3>
                     <div class="code-block no-bottom-radius"><span class="kw">for</span> <span class="var">i</span> <span class="kw">in</span> <span class="fn">range</span>(<span class="num">5</span>):
-    <span class="kw">if</span> i <span class="op">==</span> <span class="num">2</span>:
-        <span class="kw">continue</span>
-    <span class="fn">print</span>(i)</div>
+<span class="kw">if</span> i <span class="op">==</span> <span class="num">2</span>:
+    <span class="kw">continue</span>
+<span class="fn">print</span>(i)</div>
       <div class="output-box">0 1 3 4</div>
                 </div>
             </div>
@@ -228,9 +228,9 @@ e</div>
             <h2 class="anim">Nested Loops — ลูปซ้อนลูป</h2>
             <div class="columns anim">
                 <div class="code-block no-bottom-radius"><span class="kw">for</span> <span class="var">i</span> <span class="kw">in</span> <span class="fn">range</span>(<span class="num">1</span>, <span class="num">4</span>):
-    <span class="kw">for</span> <span class="var">j</span> <span class="kw">in</span> <span class="fn">range</span>(<span class="num">1</span>, i<span class="op">+</span><span class="num">1</span>):
-        <span class="fn">print</span>(j, <span class="var">end</span><span class="op">=</span><span class="str">" "</span>)
-    <span class="fn">print</span>()</div>
+<span class="kw">for</span> <span class="var">j</span> <span class="kw">in</span> <span class="fn">range</span>(<span class="num">1</span>, i<span class="op">+</span><span class="num">1</span>):
+    <span class="fn">print</span>(j, <span class="var">end</span><span class="op">=</span><span class="str">" "</span>)
+<span class="fn">print</span>()</div>
       <div class="output-box">1
 1 2
 1 2 3</div>
